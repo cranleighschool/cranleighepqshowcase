@@ -1,4 +1,6 @@
 <?php
+
+declare(strict_types=1);
 /*
 Plugin Name: Cranleigh EPQ Showcase
 Plugin URI: https://www.cranleigh.org
@@ -11,9 +13,10 @@ License: GPL2
 
 namespace FredBradley\CranleighEPQShowcase;
 
-if ( ! defined( 'WPINC' ) ) {
-	die;
+if (!\defined('WPINC')) {
+    exit;
 }
-require_once plugin_dir_path( __FILE__ ) . 'vendor/autoload.php';
+
+require_once plugin_dir_path(__FILE__).'vendor/autoload.php';
 
 $plugin = new Plugin();
