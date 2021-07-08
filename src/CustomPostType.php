@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace FredBradley\CranleighEPQShowcase;
 
-use PostTypes\PostType;
-
 class CustomPostType
 {
     /**
@@ -17,6 +15,7 @@ class CustomPostType
         'add_new' => 'Add New Post',
         'not_found' => 'No EPQ posts found',
     ];
+
     public $names = [
         'name' => 'EPQ Showcase',
         'singular' => 'Post',
@@ -27,12 +26,7 @@ class CustomPostType
     /**
      * @var
      */
-    private $post_type_key;
-
-    /**
-     * @var
-     */
-    private $post_type;
+    public $post_type_key;
 
     /**
      * @var array
@@ -47,10 +41,15 @@ class CustomPostType
      * @var array
      */
     private $options = [
-        'menu_position' => 27,
+        'menu_position' => 29,
         'menu_icon' => 'dashicons-visibility',
         'label' => 'EPQ Showcase',
         'has_archive' => true,
+	    'public' => true,
+	    'rewrite' => [
+	    	'slug' => 'showcase',
+		    'with_front' => false,
+	    ]
     ];
 
     /**
@@ -63,25 +62,23 @@ class CustomPostType
         $this->labels = array_merge($this->labels, $labels);
 
         $this->options['supports'] = $this->supports;
+        $this->options['labels'] = $this->labels;
 
         $this->options = array_merge($options, $this->options);
     }
 
-    public function registerMetaBoxes(): void
+    private function registerMetaBoxes(): void
     {
-        //		$metabox = new MetaBoxes( $this->post_type_key );
-        add_filter('rwmb_meta_boxes', [MetaBoxes::class, 'meta_boxes']);
+    	new MetaBoxes($this);
     }
 
     public function register(): void
     {
-        if (!empty($this->names)) {
-            $names = $this->names;
-        } else {
-            $names = $this->post_type_key;
-        }
+    	add_action('init', function() {
+		    register_post_type($this->post_type_key, $this->options);
+	    });
 
-        $this->post_type = new PostType($names, $this->options, $this->labels);
+
         $this->setTaxonomies();
         $this->registerMetaBoxes();
     }
@@ -94,6 +91,5 @@ class CustomPostType
 
     private function setTaxonomies(): void
     {
-        //$this->post_type->taxonomy( 'alumni-tag' );
     }
 }

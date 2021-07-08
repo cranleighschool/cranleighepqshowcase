@@ -2,7 +2,6 @@
   "name": "fredbradley/cranleigh-epq-showcase",
   "description": "A Wordpress Plugin for Cranleigh School",
   "require": {
-	"jjgrainger/posttypes": "^1.1",
 	"rilwis/meta-box": "^4.12"
   },
   "license": "MIT",

@@ -4,53 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "db5bd6de349332b70e515fec56975d1a",
+    "content-hash": "4717d2d9f0cfe49c7183ea27a5b506a0",
     "packages": [
-        {
-            "name": "jjgrainger/posttypes",
-            "version": "1.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/jjgrainger/PostTypes.git",
-                "reference": "736c43ecf3e6272a1b18c3857ecea3ac4b030745"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/jjgrainger/PostTypes/zipball/736c43ecf3e6272a1b18c3857ecea3ac4b030745",
-                "reference": "736c43ecf3e6272a1b18c3857ecea3ac4b030745",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "squizlabs/php_codesniffer": "^2.8"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "PostTypes\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Joe Grainger",
-                    "email": "hello@jjgrainger.co.uk",
-                    "homepage": "http://jjgrainger.co.uk"
-                }
-            ],
-            "description": "Simple WordPress custom post types.",
-            "homepage": "https://github.com/jjgrainger/posttype",
-            "support": {
-                "issues": "https://github.com/jjgrainger/PostTypes/issues",
-                "source": "https://github.com/jjgrainger/PostTypes/tree/master"
-            },
-            "time": "2017-05-19T12:53:48+00:00"
-        },
         {
             "name": "rilwis/meta-box",
             "version": "4.18.4",

@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'f4ef28a68c3c883f1820d864b291a2961ca30e22',
+        'reference' => '7daaacdd2fa1b3af3be2a103f00e2ab4e5e6c334',
         'name' => 'fredbradley/cranleigh-epq-showcase',
         'dev' => true,
     ),
@@ -52,7 +52,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'f4ef28a68c3c883f1820d864b291a2961ca30e22',
+            'reference' => '7daaacdd2fa1b3af3be2a103f00e2ab4e5e6c334',
             'dev_requirement' => false,
         ),
         'friendsofphp/php-cs-fixer' => array(
@@ -63,15 +63,6 @@
             'aliases' => array(),
             'reference' => 'c15377bdfa8d1ecf186f1deadec39c89984e1167',
             'dev_requirement' => true,
-        ),
-        'jjgrainger/posttypes' => array(
-            'pretty_version' => '1.1.2',
-            'version' => '1.1.2.0',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../jjgrainger/posttypes',
-            'aliases' => array(),
-            'reference' => '736c43ecf3e6272a1b18c3857ecea3ac4b030745',
-            'dev_requirement' => false,
         ),
         'php-cs-fixer/diff' => array(
             'pretty_version' => 'v2.0.2',

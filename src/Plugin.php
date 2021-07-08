@@ -9,7 +9,7 @@ class Plugin extends BaseController
     /**
      * @var
      */
-    private $post_type;
+    public $post_type;
 
     /**
      * Plugin constructor.
@@ -17,16 +17,21 @@ class Plugin extends BaseController
     public function __construct()
     {
         parent::__construct();
-        $this->runUpdateChecker('cranleigh-epq-showcase');
     }
 
     public function setupPlugin(): void
     {
-        // TODO: Implement setupPlugin() method.
-
-        // TODO: Custom Post Type
         $this->createCustomPostType('EPQ Showcase')->register();
         Template::register();
+        if (is_admin()) {
+	        $settings = new Settings($this->post_type);
+        }
+	    /*
+		 * Retrieve this value with:
+		 * $epq_showcase_settings_options = get_option( 'epq_showcase_settings_option_name' ); // Array of All Options
+		 * $blurb_from_jlt_0 = $epq_showcase_settings_options['blurb_from_jlt_0']; // Blurb from JLT
+		 */
+
     }
 
     /**
