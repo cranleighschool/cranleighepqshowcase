@@ -5,7 +5,7 @@ declare(strict_types=1);
 Plugin Name: Cranleigh EPQ Showcase
 Plugin URI: https://www.cranleigh.org
 Description: Cranleigh EPQ Showcase
-Version: 1.0.0
+Version: v1.0.0
 Author: fredbradley
 Author URI: https://www.cranleigh.org
 License: GPL2
