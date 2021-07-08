@@ -39,6 +39,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           tagging_message: ${{ steps.tag_version.outputs.new_tag }}
-          file_pattern: cranleigh-depts-and-sport.php
+          file_pattern: epq-showcase.php
           commit_message: Apply version bump change
           push_options: --force
