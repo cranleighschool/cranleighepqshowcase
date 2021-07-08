@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: Cranleigh Dedicated Community
+Plugin Name: Cranleigh EPQ Showcase
 Plugin URI: https://www.cranleigh.org
-Description: Cranleigh Dedicated Community
+Description: Cranleigh EPQ Showcase
 Version: 1.0.0
 Author: fredbradley
 Author URI: https://www.cranleigh.org
