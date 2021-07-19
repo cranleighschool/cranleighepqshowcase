@@ -17,7 +17,11 @@
 	}
   },
   "require-dev": {
-    "friendsofphp/php-cs-fixer": "^3.0",
-	"automattic/vipwpcs": "^2.3"
+	"automattic/vipwpcs": "^2.3",
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1"
+  },
+  "scripts": {
+	"phpcs": "vendor/bin/phpcs --standard=WordPress-VIP-Go -sp --basepath=. --ignore=vendor .",
+	"phpcbf": "vendor/bin/phpcbf --standard=WordPress-VIP-Go -sp --basepath=. --ignore=vendor ."
   }
 }

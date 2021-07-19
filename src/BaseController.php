@@ -9,7 +9,9 @@ namespace FredBradley\CranleighEPQShowcase;
  */
 abstract class BaseController
 {
-    /**
+	public $post_type;
+
+	/**
      * BaseController constructor.
      */
     public function __construct()

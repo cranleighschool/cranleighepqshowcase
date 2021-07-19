@@ -1,8 +1,8 @@
 <?php
 
-declare(strict_types=1);
+    declare( strict_types=1 );
 
-namespace FredBradley\CranleighEPQShowcase;
+    namespace FredBradley\CranleighEPQShowcase;
 
 class Plugin extends BaseController
 {
@@ -26,11 +26,6 @@ class Plugin extends BaseController
         if (is_admin()) {
             $settings = new Settings($this->post_type);
         }
-        /*
-         * Retrieve this value with:
-         * $epq_showcase_settings_options = get_option( 'epq_showcase_settings_option_name' ); // Array of All Options
-         * $blurb_from_jlt_0 = $epq_showcase_settings_options['blurb_from_jlt_0']; // Blurb from JLT
-         */
     }
 
     /**
