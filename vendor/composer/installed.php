@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'ca98ec9d1d79a4e8730a63315cb8ca51c18f1613',
+        'reference' => '5e47b5dc16b1911ed2e1d76751bf1ad6c8501395',
         'name' => 'fredbradley/cranleigh-epq-showcase',
         'dev' => true,
     ),
@@ -43,7 +43,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'ca98ec9d1d79a4e8730a63315cb8ca51c18f1613',
+            'reference' => '5e47b5dc16b1911ed2e1d76751bf1ad6c8501395',
             'dev_requirement' => false,
         ),
         'giacocorsiglia/wordpress-stubs' => array(

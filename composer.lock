@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "db4df0502f91e97a85e256dbdfc56c53",
+    "content-hash": "b7588c05386e20a60c1c2b896ae53dbc",
     "packages": [
         {
             "name": "rilwis/meta-box",
@@ -1514,7 +1514,9 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "ext-dom": "*"
+    },
     "platform-dev": [],
     "plugin-api-version": "2.1.0"
 }
