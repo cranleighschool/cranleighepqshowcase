@@ -47,7 +47,8 @@ class CustomPostType
         'has_archive' => true,
         'public' => true,
         'rewrite' => [
-            'slug' => 'our-school/academics/epq-showcase',
+        	//'slug' => 'our-school/academics/departments/epq/showcase', // Preferred Slug
+            'slug' => 'our-school/academics/epq-showcase', // Have to put up with this, due to suspected WP limitations.
             'with_front' => false,
         ],
     ];
