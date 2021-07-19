@@ -16,8 +16,8 @@
                     if (have_posts()) { ?>
                             <header class="page-header">
                                 <h1 class="page-title">EPQ Showcase</h1>
-								<p class="lead"><?php echo \FredBradley\CranleighEPQShowcase\Settings::get('blurb_from_jlt_0'); ?></p>
-                            </header><!-- .page-header -->
+								<?php echo apply_filters( 'frb_lead_content', wp_kses_post( \FredBradley\CranleighEPQShowcase\Settings::get( 'blurb_from_jlt_0' ) ) ); ?>
+							</header><!-- .page-header -->
                             <div class="entry-content">
 
                                 <?php

@@ -4,6 +4,8 @@
 
     namespace FredBradley\CranleighEPQShowcase;
 
+    use DOMDocument;
+
 class Template
 {
     public $post_type_key;
@@ -20,13 +22,29 @@ class Template
         add_filter('template_include', [ $instance, 'selectTemplate' ]);
         add_action('pre_get_posts', [ $instance, 'showAllPosts' ]);
         add_action('wp_head', [ $instance, 'my_custom_styles' ], 100);
+        add_filter('frb_lead_content', [$instance, 'filter_lead_content']);
     }
 
     public function my_custom_styles(): void
     {
         if (is_singular($this->post_type_key)) {
-
         }
+    }
+
+    /**
+     * @param string $content
+     *
+     * @return false|string
+     */
+    public function filter_lead_content(string $content)
+    {
+        $content = apply_filters('the_content', $content);
+        $dom     = new DOMDocument();
+        $dom->loadHTML($content);
+        $firstParagraph = $dom->getElementsByTagName('p')->item(0);
+        $firstParagraph->setAttribute("class", "lead");
+
+        return $dom->saveHTML($dom);
     }
 
     public function selectTemplate(string $template): string
