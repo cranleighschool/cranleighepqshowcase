@@ -7,7 +7,7 @@
 	namespace FredBradley\CranleighEPQShowcase;
 
 	class Settings {
-		private $epq_showcase_settings_options;
+		private $epq_showcase_options;
 
 		private $post_type;
 
@@ -37,7 +37,7 @@
 		}
 
 		public function epq_showcase_settings_create_admin_page(): void {
-			$this->epq_showcase_settings_options = get_option( 'epq_showcase_settings_option_name' ); ?>
+			$this->epq_showcase_options = get_option( 'epq_showcase_settings_option_name' ); ?>
 
 			<div class="wrap">
 				<h2>EPQ Showcase Settings</h2>
@@ -90,10 +90,9 @@
 		}
 
 		public function blurb_from_jlt_0_callback(): void {
-			if ( isset( $this->epq_showcase_settings_options['blurb_from_jlt_0'] ) ) {
-				$content = esc_attr( $this->epq_showcase_settings_options['blurb_from_jlt_0'] );
-			} else {
-				$content = '';
+			$content = '';
+			if ( isset( $this->epq_showcase_options['blurb_from_jlt_0'] ) ) {
+				$content = esc_attr( $this->epq_showcase_options['blurb_from_jlt_0'] );
 			}
 
 			wp_editor(
