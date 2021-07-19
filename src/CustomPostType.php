@@ -42,7 +42,7 @@ class CustomPostType
      */
     private $options = [
         'menu_position' => 29,
-        'menu_icon' => 'dashicons-visibility',
+        'menu_icon' => 'dashicons-analytics',
         'label' => 'EPQ Showcase',
         'has_archive' => true,
         'public' => true,

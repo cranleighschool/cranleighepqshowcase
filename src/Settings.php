@@ -80,7 +80,7 @@
 		public function epq_showcase_settings_sanitize( $input ) {
 			$sanitary_values = [];
 			if ( isset( $input['blurb_from_jlt_0'] ) ) {
-				$sanitary_values['blurb_from_jlt_0'] = esc_textarea( $input['blurb_from_jlt_0'] );
+				$sanitary_values['blurb_from_jlt_0'] = ( $input['blurb_from_jlt_0'] );
 			}
 
 			return $sanitary_values;
@@ -92,7 +92,7 @@
 		public function blurb_from_jlt_0_callback(): void {
 			$content = '';
 			if ( isset( $this->epq_showcase_options['blurb_from_jlt_0'] ) ) {
-				$content = esc_attr( $this->epq_showcase_options['blurb_from_jlt_0'] );
+				$content = wp_kses( $this->epq_showcase_options['blurb_from_jlt_0'], "" );
 			}
 
 			wp_editor(

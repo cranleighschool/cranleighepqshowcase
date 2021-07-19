@@ -15,7 +15,8 @@
 
                     if (have_posts()) { ?>
                             <header class="page-header">
-                                <h1 class="page-title">A Dedicated Community</h1>
+                                <h1 class="page-title">EPQ Showcase</h1>
+								<p class="lead"><?php echo \FredBradley\CranleighEPQShowcase\Settings::get('blurb_from_jlt_0'); ?></p>
                             </header><!-- .page-header -->
                             <div class="entry-content">
 

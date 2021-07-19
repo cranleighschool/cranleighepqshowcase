@@ -29,7 +29,7 @@ class MetaBoxes
     public function meta_boxes(array $meta_boxes)
     {
         $meta_boxes[] = [
-            'id' => 'dedicated_meta',
+            'id' => 'epq_meta',
             'title' => 'Meta Data',
             'post_types' => [$this->post_type->post_type_key],
             'context' => 'side',
@@ -37,22 +37,10 @@ class MetaBoxes
             'autosave' => true,
             'fields' => [
                 [
-                    'name' => __('Job title', 'cranleigh-2016'),
-                    'id' => self::PREFIX.'jobtitle',
+                    'name' => __('Pupil Name', 'cranleigh-2016'),
+                    'id' => self::PREFIX.'pupil',
                     'type' => 'text',
-                    'desc' => 'Job Title',
-                ],
-                [
-                    'name' => __('Start Date', 'cranleigh-2016'),
-                    'id' => self::PREFIX.'startdate',
-                    'type' => 'date',
-                    'desc' => 'The date that they started working at Cranleigh',
-                ],
-                [
-                    'name' => __('Retired Date', 'cranleigh-2016'),
-                    'id' => self::PREFIX.'enddate',
-                    'type' => 'date',
-                    'desc' => 'The date that they left Cranleigh',
+                    'desc' => 'Pupil Name (eg: J Cooksley)',
                 ],
             ],
         ];

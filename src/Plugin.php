@@ -22,7 +22,7 @@ class Plugin extends BaseController
     public function setupPlugin(): void
     {
         $this->createCustomPostType('EPQ Showcase')->register();
-        Template::register();
+        Template::register($this->post_type->post_type_key);
         if (is_admin()) {
             new Settings($this->post_type);
         }
