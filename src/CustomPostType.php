@@ -24,7 +24,7 @@ class CustomPostType
     ];
 
     /**
-     * @var
+     * @var string
      */
     public $post_type_key;
 

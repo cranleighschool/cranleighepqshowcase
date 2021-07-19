@@ -1,0 +1,21 @@
+includes:
+  - vendor/szepeviktor/phpstan-wordpress/extension.neon
+parameters:
+  ignoreErrors:
+    - message: '#Function cranleigh_breadcrumbs not found.#'
+      path: templates/single.php
+    - message: '#Variable \$post might not be defined.#'
+      path: templates/single.php
+    - message: '#Function cranleigh_2016_entry_footer not found.#'
+      path: templates/single.php
+    - message: '#Function cranleigh_2016_keep_reading not found.#'
+      path: templates/single.php
+    - message: '#Function cranleigh_breadcrumbs not found.#'
+      path: templates/archive.php
+    - message: '#Function cs_quickJump not found.#'
+      path: templates/single.php
+  level: 5
+  paths:
+    - epq-showcase.php
+    - src/
+    - templates/

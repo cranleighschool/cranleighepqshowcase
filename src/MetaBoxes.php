@@ -8,6 +8,11 @@ class MetaBoxes
 {
     public const PREFIX = 'epq_showcase_';
 
+	/**
+	 * @var \FredBradley\CranleighEPQShowcase\CustomPostType
+	 */
+	public $post_type;
+
     public function __construct(CustomPostType $post_type)
     {
         $this->post_type = $post_type;

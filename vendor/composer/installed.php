@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'b4e30a8ac7fa3524d78ed047fbe01c22ca97e072',
+        'reference' => 'ca98ec9d1d79a4e8730a63315cb8ca51c18f1613',
         'name' => 'fredbradley/cranleigh-epq-showcase',
         'dev' => true,
     ),
@@ -43,8 +43,14 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'b4e30a8ac7fa3524d78ed047fbe01c22ca97e072',
+            'reference' => 'ca98ec9d1d79a4e8730a63315cb8ca51c18f1613',
             'dev_requirement' => false,
+        ),
+        'giacocorsiglia/wordpress-stubs' => array(
+            'dev_requirement' => true,
+            'replaced' => array(
+                0 => '*',
+            ),
         ),
         'pdepend/pdepend' => array(
             'pretty_version' => '2.9.1',
@@ -55,6 +61,15 @@
             'reference' => '1632f0cee84512ffd6dde71e58536b3b06528c41',
             'dev_requirement' => true,
         ),
+        'php-stubs/wordpress-stubs' => array(
+            'pretty_version' => 'v5.7.2',
+            'version' => '5.7.2.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../php-stubs/wordpress-stubs',
+            'aliases' => array(),
+            'reference' => 'beda02c58f1c4689d42c8dde6a84f7f0c9c93f42',
+            'dev_requirement' => true,
+        ),
         'phpmd/phpmd' => array(
             'pretty_version' => '2.10.1',
             'version' => '2.10.1.0',
@@ -62,6 +77,15 @@
             'install_path' => __DIR__ . '/../phpmd/phpmd',
             'aliases' => array(),
             'reference' => 'bd5ef43d1dcaf7272605027c959c1c5ff3761f7a',
+            'dev_requirement' => true,
+        ),
+        'phpstan/phpstan' => array(
+            'pretty_version' => '0.12.92',
+            'version' => '0.12.92.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../phpstan/phpstan',
+            'aliases' => array(),
+            'reference' => '64d4c5dc8ea96972bc18432d137a330239a5d2b2',
             'dev_requirement' => true,
         ),
         'psr/container' => array(
@@ -160,6 +184,15 @@
             'reference' => '46cd95797e9df938fdd2b03693b5fca5e64b01ce',
             'dev_requirement' => true,
         ),
+        'symfony/polyfill-php73' => array(
+            'pretty_version' => 'v1.23.0',
+            'version' => '1.23.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/polyfill-php73',
+            'aliases' => array(),
+            'reference' => 'fba8933c384d6476ab14fb7b8526e5287ca7e010',
+            'dev_requirement' => true,
+        ),
         'symfony/polyfill-php80' => array(
             'pretty_version' => 'v1.23.0',
             'version' => '1.23.0.0',
@@ -192,6 +225,15 @@
             'provided' => array(
                 0 => '1.0|2.0',
             ),
+        ),
+        'szepeviktor/phpstan-wordpress' => array(
+            'pretty_version' => 'v0.7.7',
+            'version' => '0.7.7.0',
+            'type' => 'phpstan-extension',
+            'install_path' => __DIR__ . '/../szepeviktor/phpstan-wordpress',
+            'aliases' => array(),
+            'reference' => 'bdbea69b2ba4a69998c3b6fe2b7106d78a23bd72',
+            'dev_requirement' => true,
         ),
         'wp-coding-standards/wpcs' => array(
             'pretty_version' => '2.3.0',

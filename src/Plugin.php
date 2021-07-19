@@ -7,7 +7,7 @@
 class Plugin extends BaseController
 {
     /**
-     * @var
+     * @var \FredBradley\CranleighEPQShowcase\CustomPostType
      */
     public $post_type;
 

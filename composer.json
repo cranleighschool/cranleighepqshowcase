@@ -19,11 +19,13 @@
   "require-dev": {
 	"automattic/vipwpcs": "^2.3",
     "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
-    "phpmd/phpmd": "^2.10"
+    "phpmd/phpmd": "^2.10",
+	"szepeviktor/phpstan-wordpress": "^0.7.5"
   },
   "scripts": {
 	"phpcs": "vendor/bin/phpcs --standard=WordPress-VIP-Go -sp --colors --basepath=. --ignore=vendor .",
 	"phpcbf": "vendor/bin/phpcbf --standard=WordPress-VIP-Go -sp --colors --basepath=. --ignore=vendor .",
-	"phpmd": "vendor/bin/phpmd . ansi phpmd.xml"
+	"phpmd": "vendor/bin/phpmd . ansi phpmd.xml",
+	"phpstan": "vendor/bin/phpstan analyse --memory-limit=2G"
   }
 }
