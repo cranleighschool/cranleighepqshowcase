@@ -47,7 +47,7 @@ class CustomPostType
         'has_archive' => true,
 	    'public' => true,
 	    'rewrite' => [
-	    	'slug' => 'showcase',
+	    	'slug' => 'our-school/academics/departments/epq/showcase',
 		    'with_front' => false,
 	    ]
     ];
