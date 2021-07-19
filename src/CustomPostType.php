@@ -45,11 +45,11 @@ class CustomPostType
         'menu_icon' => 'dashicons-visibility',
         'label' => 'EPQ Showcase',
         'has_archive' => true,
-	    'public' => true,
-	    'rewrite' => [
-	    	'slug' => 'our-school/academics/departments/epq/showcase',
-		    'with_front' => false,
-	    ]
+        'public' => true,
+        'rewrite' => [
+            'slug' => 'our-school/academics/departments/epq/showcase',
+            'with_front' => false,
+        ],
     ];
 
     /**
@@ -67,20 +67,19 @@ class CustomPostType
         $this->options = array_merge($options, $this->options);
     }
 
-    private function registerMetaBoxes(): void
-    {
-    	new MetaBoxes($this);
-    }
-
     public function register(): void
     {
-    	add_action('init', function() {
-		    register_post_type($this->post_type_key, $this->options);
-	    });
-
+        add_action('init', function (): void {
+            register_post_type($this->post_type_key, $this->options);
+        });
 
         $this->setTaxonomies();
         $this->registerMetaBoxes();
+    }
+
+    private function registerMetaBoxes(): void
+    {
+        new MetaBoxes($this);
     }
 
     private function setPostTypeKey(string $key): void

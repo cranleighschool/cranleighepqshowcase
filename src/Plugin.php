@@ -24,14 +24,13 @@ class Plugin extends BaseController
         $this->createCustomPostType('EPQ Showcase')->register();
         Template::register();
         if (is_admin()) {
-	        $settings = new Settings($this->post_type);
+            $settings = new Settings($this->post_type);
         }
-	    /*
-		 * Retrieve this value with:
-		 * $epq_showcase_settings_options = get_option( 'epq_showcase_settings_option_name' ); // Array of All Options
-		 * $blurb_from_jlt_0 = $epq_showcase_settings_options['blurb_from_jlt_0']; // Blurb from JLT
-		 */
-
+        /*
+         * Retrieve this value with:
+         * $epq_showcase_settings_options = get_option( 'epq_showcase_settings_option_name' ); // Array of All Options
+         * $blurb_from_jlt_0 = $epq_showcase_settings_options['blurb_from_jlt_0']; // Blurb from JLT
+         */
     }
 
     /**

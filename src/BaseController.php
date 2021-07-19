@@ -5,9 +5,7 @@ declare(strict_types=1);
 namespace FredBradley\CranleighEPQShowcase;
 
 /**
- * Class BaseController
- *
- * @package FredBradley\CranleighEPQShowcase
+ * Class BaseController.
  */
 abstract class BaseController
 {

@@ -20,9 +20,9 @@ class ComposerStaticInit38a3087464110901b97c71456791760d
     );
 
     public static $prefixLengthsPsr4 = array (
-        'W' => 
+        'V' => 
         array (
-            'WeDevs\\Fixer\\' => 13,
+            'VariableAnalysis\\' => 17,
         ),
         'S' => 
         array (
@@ -60,6 +60,7 @@ class ComposerStaticInit38a3087464110901b97c71456791760d
         array (
             'Doctrine\\Common\\Lexer\\' => 22,
             'Doctrine\\Common\\Annotations\\' => 28,
+            'Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\' => 55,
         ),
         'C' => 
         array (
@@ -69,9 +70,9 @@ class ComposerStaticInit38a3087464110901b97c71456791760d
     );
 
     public static $prefixDirsPsr4 = array (
-        'WeDevs\\Fixer\\' => 
+        'VariableAnalysis\\' => 
         array (
-            0 => __DIR__ . '/..' . '/tareq1988/wp-php-cs-fixer/src',
+            0 => __DIR__ . '/..' . '/sirbrillig/phpcs-variable-analysis/VariableAnalysis',
         ),
         'Symfony\\Polyfill\\Php80\\' => 
         array (
@@ -172,6 +173,10 @@ class ComposerStaticInit38a3087464110901b97c71456791760d
         'Doctrine\\Common\\Annotations\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations',
+        ),
+        'Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dealerdirect/phpcodesniffer-composer-installer/src',
         ),
         'Composer\\XdebugHandler\\' => 
         array (

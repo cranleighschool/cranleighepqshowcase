@@ -10,7 +10,7 @@ class MetaBoxes
 
     public function __construct(CustomPostType $post_type)
     {
-    	$this->post_type = $post_type;
+        $this->post_type = $post_type;
         add_filter('rwmb_meta_boxes', [$this, 'meta_boxes']);
     }
 
