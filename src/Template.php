@@ -45,7 +45,7 @@ margin-top:5px;
 
             $timeFromDate = strtotime($date);
 
-            return date('F Y', $timeFromDate);
+            return gmdate('F Y', $timeFromDate);
         }
 
         public function selectTemplate(string $template): string

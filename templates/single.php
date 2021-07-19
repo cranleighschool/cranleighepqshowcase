@@ -30,21 +30,21 @@
 									<?php
                                         if (has_post_thumbnail()) {
                                             $fullsizeurl = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full')[0];
-                                            echo '<a href="'.$fullsizeurl.'">';
+                                            echo esc_html('<a href="'.$fullsizeurl.'">');
                                             the_post_thumbnail('medium', ['class' => 'img-responsive']);
                                             echo '</a>';
                                         } ?>
 
 										<dl>
 											<dt>Job Title</dt>
-											<dd><?php echo get_post_meta(get_the_ID(), 'dedcomm_jobtitle', true); ?></dd>
+											<dd><?php echo esc_html(get_post_meta(get_the_ID(), 'dedcomm_jobtitle', true)); ?></dd>
 											<?php if (get_post_meta(get_the_ID(), 'dedcomm_startdate', true)) { ?>
 												<dt>Joined Cranleigh</dt>
-												<dd><?php echo \FredBradley\CranleighDedicatedCommunity\Template::yearFromDate(); ?></dd>
+												<dd><?php echo esc_html(\FredBradley\CranleighDedicatedCommunity\Template::yearFromDate()); ?></dd>
 											<?php } ?>
 											<?php if (get_post_meta(get_the_ID(), 'dedcomm_enddate', true)) { ?>
 												<dt>Departed Cranleigh</dt>
-												<dd><?php echo \FredBradley\CranleighDedicatedCommunity\Template::yearFromDate('end'); ?></dd>
+												<dd><?php echo esc_html(\FredBradley\CranleighDedicatedCommunity\Template::yearFromDate('end')); ?></dd>
 											<?php } ?>
 										</dl>
 									</div>

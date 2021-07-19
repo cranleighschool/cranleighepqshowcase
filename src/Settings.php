@@ -96,7 +96,7 @@
 				$content = '';
 			}
 
-			echo wp_editor(
+			wp_editor(
 					$content,
 					'jltblurb',
 					[
