@@ -34,19 +34,6 @@
                                             the_post_thumbnail('medium', ['class' => 'img-responsive']);
                                             echo '</a>';
                                         } ?>
-
-										<dl>
-											<dt>Job Title</dt>
-											<dd><?php echo esc_html(get_post_meta(get_the_ID(), 'dedcomm_jobtitle', true)); ?></dd>
-											<?php if (get_post_meta(get_the_ID(), 'dedcomm_startdate', true)) { ?>
-												<dt>Joined Cranleigh</dt>
-												<dd><?php echo esc_html(\FredBradley\CranleighDedicatedCommunity\Template::yearFromDate()); ?></dd>
-											<?php } ?>
-											<?php if (get_post_meta(get_the_ID(), 'dedcomm_enddate', true)) { ?>
-												<dt>Departed Cranleigh</dt>
-												<dd><?php echo esc_html(\FredBradley\CranleighDedicatedCommunity\Template::yearFromDate('end')); ?></dd>
-											<?php } ?>
-										</dl>
 									</div>
 										<?php
 
