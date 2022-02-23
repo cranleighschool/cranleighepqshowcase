@@ -16,13 +16,20 @@
                     if (have_posts()) { ?>
                             <header class="page-header">
                                 <h1 class="page-title">EPQ Showcase</h1>
+								<nav>
+									<ul class="list-inline quick-jump">
+										<li>
+											<a href="https://www.cranleigh.org/our-school/academics/curriculum-overview/the-extended-project-qualification-epq/">EPQ Information</a>
+										</li>
+									</ul>
+								</nav>
 								<?php echo apply_filters( 'frb_lead_content', wp_kses_post( \FredBradley\CranleighEPQShowcase\Settings::get( 'blurb_from_jlt_0' ) ) ); ?>
 							</header><!-- .page-header -->
                             <div class="entry-content">
 
                                 <?php
                                 // Start the Loop
-                                echo '<div class="isotope-cards">';
+                                echo '<div class="sport-cards">';
                                 while (have_posts()) {
                                     the_post(); ?>
                                             <div class="card">
@@ -34,7 +41,6 @@
                                                 <div class="card-text">
                                                     <h3 class="text-center"><a href="<?php the_permalink(); ?>"
                                                            style="user-select: none;"><?php the_title(); ?></a></h3>
-                                                    <p class="text-center"><?php echo esc_html(get_post_meta(get_the_ID(), 'dedcomm_jobtitle', true)); ?></p>
                                                 </div>
                                             </div>
 
