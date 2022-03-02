@@ -23,7 +23,7 @@
 										</li>
 									</ul>
 								</nav>
-								<?php echo apply_filters( 'frb_lead_content', wp_kses_post( \FredBradley\CranleighEPQShowcase\Settings::get( 'blurb_from_jlt_0' ) ) ); ?>
+								<?php echo apply_filters( 'the_content', wp_kses_post( \FredBradley\CranleighEPQShowcase\Settings::get( 'blurb_from_jlt_0' ) ) ); ?>
 							</header><!-- .page-header -->
                             <div class="entry-content">
 
