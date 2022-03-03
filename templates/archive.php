@@ -15,11 +15,11 @@
 
                     if (have_posts()) { ?>
                             <header class="page-header">
-                                <h1 class="page-title">EPQ Showcase</h1>
+                                <h1 class="page-title">Extended Project Qualification Showcase</h1>
 								<nav>
 									<ul class="list-inline quick-jump">
 										<li>
-											<a href="https://www.cranleigh.org/our-school/academics/curriculum-overview/the-extended-project-qualification-epq/">EPQ Information</a>
+											<a href="<?php echo esc_url(cranleigh_network_menu_uri('/our-school/academics/curriculum-overview/the-extended-project-qualification-epq/')); ?>">EPQ Information</a>
 										</li>
 									</ul>
 								</nav>

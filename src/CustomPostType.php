@@ -10,17 +10,17 @@ class CustomPostType
      * @var array
      */
     public $labels = [
-        'name' => 'EPQ Showcase',
+        'name' => 'Extended Project Qualification  Showcase',
         'singular_name' => 'EPQ Item',
         'add_new' => 'Add New Post',
         'not_found' => 'No EPQ posts found',
     ];
 
     public $names = [
-        'name' => 'EPQ Showcase',
+        'name' => 'Extended Project Qualification Showcase',
         'singular' => 'Post',
-        'plural' => 'EPQ Showcase',
-        'slug' => 'epq-showcase',
+        'plural' => 'Extended Project Qualification Showcase',
+        'slug' => 'epq',
     ];
 
     /**
@@ -47,8 +47,7 @@ class CustomPostType
         'has_archive' => true,
         'public' => true,
         'rewrite' => [
-        	//'slug' => 'our-school/academics/departments/epq/showcase', // Preferred Slug
-            'slug' => 'our-school/academics/epq-showcase', // Have to put up with this, due to suspected WP limitations.
+            'slug' => 'academics/extended-project-qualification-showcase',
             'with_front' => false,
         ],
     ];
