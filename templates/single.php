@@ -26,15 +26,6 @@
 								</header><!-- .entry-header -->
 								<?php cs_quickJump(); ?>
 								<div class="entry-content">
-									<div class="person-meta alignright">
-									<?php
-                                        if (has_post_thumbnail()) {
-                                            $fullsizeurl = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full')[0];
-                                            echo esc_html('<a href="'.$fullsizeurl.'">');
-                                            the_post_thumbnail('medium', ['class' => 'img-responsive']);
-                                            echo '</a>';
-                                        } ?>
-									</div>
 										<?php
 
                                         the_content(sprintf(
